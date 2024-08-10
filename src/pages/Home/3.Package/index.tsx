@@ -1,0 +1,131 @@
+import bg_img from '@assets/3.Package/bg.png'
+
+const fake_db = [
+	{
+		id: 0,
+		title: 'PIT STOP',
+		subtitle: 'fast highlight',
+		followers: '250,000',
+		KOL: '6',
+		price: '8,500',
+		color: 'default'
+	},
+	{
+		id: 1,
+		title: 'SPRINT',
+		subtitle: 'reliable product campaign',
+		followers: '500,000',
+		KOL: '12',
+		price: '15,000',
+		color: 'default'
+	},
+	{
+		id: 2,
+		title: 'GRAND PRIX',
+		subtitle: 'Optimal plan to kick it off',
+		followers: '750,000',
+		KOL: '15',
+		price: '22,500',
+		color: '#F43A66'
+	},
+	{
+		id: 3,
+		title: 'LE MAN',
+		subtitle: 'Deep coverage for the max audience',
+		followers: '1,000,000',
+		KOL: '20',
+		price: '30,000',
+		color: 'default'
+	},
+]
+
+const Package = () => {
+	return (
+		<section 
+			className='bg-dark'
+			style={{
+				background: `linear-gradient(to right, #071627 47%, rgba(7, 22, 39, 0) 100%), #071627 url(${bg_img}) no-repeat right bottom`,
+				backgroundSize: 'contain'
+			}}
+			id='package'
+		>
+			<div className="max-w-[580px] mx-auto text-white pt-9 pb-16">
+				<h2 className="text-[35px] mb-4">Packages</h2>
+
+				<p className="text-[20px] font-medium font-[Inter] mb-[26px]">
+					We provide tailored strategies for the most sophisticated projects to achieve the best outcome. <br /> <br />
+
+					Just tell us your goals, and we will make sure to come up with an optimal solution. Here are our 4 most popular promo packages:
+				</p>
+
+				<div className="grid grid-cols-2 gap-5">
+					{fake_db.map((item, index) => (
+						<PackageCard key={index} {...item} />
+					))}
+				</div>
+			</div>
+		</section>
+	)
+}
+
+const PackageCard = (
+	{ title, subtitle, followers, KOL, price, color }: { title: string, subtitle: string, followers: string, KOL: string, price: string, color: string }
+) => {
+
+	return (
+		<div
+			className="border border-white bg-dark text-center p-4 pb-[10px] "
+			style={{
+				borderColor: color,
+				boxShadow: `0px 0px 60px -10px ${color}`
+			}}
+		>
+			<div className="min-h-[80px] mb-4">
+				<h3
+					className={"mb-[10px] "}
+					style={{ color: color }}
+				>{title}</h3>
+				<h4 className="text-[15px] font-[Inter] ">{subtitle}</h4>
+			</div>
+
+
+			<div className="">
+				<div className="flex items-center justify-between">
+					<p className="font-medium font-[Inter] whitespace-nowrap text-[15px] ">Followers Cowered</p>
+					<div 
+						className="min-w-[70px] text-center text-[11px]" 
+						style={{ 
+							backgroundColor: color === 'default' ? "#46D2B0" : color, 
+							color: color === 'default' ? "#081627" : 'white'
+						}}>{followers}</div>
+				</div>
+				<hr className="mx-[26px] my-3" style={{ borderColor: color }} />
+				<div className="flex items-center justify-between">
+					<p className="font-medium font-[Inter] whitespace-nowrap text-[15px] ">KOLs participaiting</p>
+					<div 
+						className="min-w-[70px] text-center text-[11px]" 
+						style={{ 
+							backgroundColor: color === 'default' ? "#46D2B0" : color, 
+							color: color === 'default' ? "#081627" : 'white'
+						}}>{KOL}</div>
+				</div>
+
+				<strong className="my-[10px] text-[18px] block">${price}</strong>
+
+				<div 
+					className="text-[13px] p-1 w-[166px] mx-auto mb-[10px]"
+					style={{
+						backgroundColor: color === 'default' ? "white" : color,
+						color: color === 'default' ? "#081627" : 'white'
+					}}
+				>Get</div>
+				<p 
+					className="text-xs font-[Inter] font-medium"
+					style={{ color: color === 'default' ? "#46D2B0" : color }}
+				>Active till 15.09.24</p>
+			</div>
+		</div>
+	)
+}
+
+export default Package
