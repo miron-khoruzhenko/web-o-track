@@ -21,8 +21,8 @@ const Hero = () => {
 			className='w-screen min-h-screen text-black relative bg-white h-screen overflow-x-hidden '
 		>
 
-			<img src={bg_img_1} alt="" className="absolute w-[160px] z-0 [transform:rotateY(180deg)] md:[transform:rotateY(0deg)] md:w-auto top-28 md:top-[5%] -right-6 md:right-auto md:left-0" />
-			<img src={bg_img_2} alt="" className="absolute w-[120px] z-0 [transform:rotateY(180deg)] md:[transform:rotateY(0deg)] md:w-auto bottom-12 md:bottom-[5%] -left-6 md:left-auto md:right-0" />
+			<img src={bg_img_1} alt="" className="absolute max-w-[20%] w-[160px] z-0 [transform:rotateY(180deg)] md:[transform:rotateY(0deg)] md:w-auto top-28 md:top-[5%] -right-6 md:right-auto md:left-0" />
+			<img src={bg_img_2} alt="" className="absolute max-w-[20%] w-[120px] z-0 [transform:rotateY(180deg)] md:[transform:rotateY(0deg)] md:w-auto bottom-12 md:bottom-[5%] -left-6 md:left-auto md:right-0" />
 
 			<div className="max-w-[580px] mx-auto pt-4 ">
 
@@ -56,7 +56,8 @@ const Hero = () => {
 				</div>
 
 
-				<div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+				{/* <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"> */}
+				<div className="">
 
 					<h1 className="text-center text-[16px] md:text-[32px] whitespace-nowrap mb-[60px] tracking-tighter mx-auto">”Top-tier marketing”</h1>
 

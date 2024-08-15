@@ -11,10 +11,10 @@ import img from '@assets/4.Services/o_img.png'
 const Services = () => {
 	return (
 		<section className='relative pb-[94px] overflow-x-hidden' id='services'>
-			<img src={img} alt="" className="absolute w-[160px] z-0 [transform:rotateY(0deg)_rotateZ(-60deg)] md:[transform:rotateY(0deg)] md:w-auto top-80 md:top-6 -right-16" style={{
+			<img src={img} alt="" className="absolute w-[160px] max-w-[20%] z-0 [transform:rotateY(0deg)_rotateZ(-60deg)] md:[transform:rotateY(0deg)] md:w-auto top-80 md:top-6 -right-16" style={{
 				filter: 'hue-rotate(180deg)'
 			}} />
-			<img src={img} alt="" className="absolute w-[140px] z-0 [transform:rotateY(180deg)] md:[transform:rotateY(deg)] md:w-auto z-20 bottom-auto top-44 md:top-auto md:bottom-6 z-20 -left-16  " style={{
+			<img src={img} alt="" className="absolute w-[140px] max-w-[20%] z-0 [transform:rotateY(180deg)] md:[transform:rotateY(deg)] md:w-auto z-20 bottom-auto top-44 md:top-auto md:bottom-6 z-20 -left-16  " style={{
 				filter: 'hue-rotate(180deg)'
 			}} />
 

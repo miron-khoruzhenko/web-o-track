@@ -83,7 +83,7 @@ const Contact = () => {
 					<li className="">Services</li>
 				</ul>
 
-				<img src={logo_text} alt="" className="h-[34px] md:h-auto mx-4" />
+				<img src={logo_text} alt="" className="h-[34px] md:h-auto mx-4 block md:hidden" />
 			</div>
 
 		</section>
