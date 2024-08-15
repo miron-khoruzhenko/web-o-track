@@ -7,14 +7,14 @@ import Contact from "./pages/Home/6.Contact"
 
 function App() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Hero />
       <Mission />
       <Package />
       <Services />
       <Clients />
       <Contact />
-    </>
+    </div>
   )
 }
 

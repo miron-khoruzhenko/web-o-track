@@ -1,17 +1,20 @@
 import plane_img from '@assets/2.Mission/plane.png'
 import { useState, useEffect, useRef } from 'react';
-import { twMerge as cn } from 'tailwind-merge';
-
+import img_abstract from '@assets/4.Services/icon1.png'
 const Mission = () => {
 
 
 	return (
-		<section className='w-screen relative py-10 mb-12' id="mission">
+		<section className='w-screen relative py-10 mb-12 min-h-[500px] flex justify-center items-center' id="mission">
 			<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[580px] w-full ">
 
-			<div className="p-5 bg-white max-w-[400px] relative">
-				<FloatingDiv className='left-full bottom-full translate-y-[20%] -translate-x-[20%] -rotate-45' />
-				<FloatingDiv className='right-full top-full rotate-[-30deg] -translate-y-[20%] translate-x-[20%] animate-' />
+			<div 
+			style={{
+				boxShadow: "0px 4px 20px 0px rgba(0, 0, 0, 0.35)"
+			}}
+			className="p-5 bg-white max-w-[400px] relative">
+				{/* <FloatingDiv className='left-full bottom-full translate-y-[20%] -translate-x-[20%] -rotate-45' /> */}
+				{/* <FloatingDiv className='right-full top-full rotate-[-30deg] -translate-y-[20%] translate-x-[20%] animate-' /> */}
 
 				<div className="flex items-center justify-start mb-5">
 					<h2 className="text-[30px] whitespace-nowrap tracking-tighter">Our Mission</h2>
@@ -31,13 +34,13 @@ const Mission = () => {
 	)
 }
 
-const FloatingDiv = ({ className = '' }: { className?: string }) => {
-	return (
-		<div className={cn("absolute rounded-[10px] bg-[#8fe3cf] outline outline-[#81ccb9] size-[145px] aspect-square  ", className)}>
-			<div className="absolute rounded-[10px] bg-[#fff] opacity-80 w-[145px] h-[140px] aspect-square bottom-2 left-[3px] border"></div>
-		</div>
-	)
-}
+// const FloatingDiv = ({ className = '' }: { className?: string }) => {
+// 	return (
+// 		<div className={cn("absolute rounded-[10px] bg-[#8fe3cf] outline outline-[#81ccb9] size-[145px] aspect-square  ", className)}>
+// 			<div className="absolute rounded-[10px] bg-[#fff] opacity-80 w-[145px] h-[140px] aspect-square bottom-2 left-[3px] border"></div>
+// 		</div>
+// 	)
+// }
 
 
 function GridContainer() {
@@ -63,6 +66,7 @@ function GridContainer() {
 			border: '1px solid #ccc'
 		}
 	})
+	const windowWidth = window.innerWidth
 
 	useEffect(() => {
 		const container = containerRef.current as HTMLElement;
@@ -75,7 +79,7 @@ function GridContainer() {
 			// const divSize = 100; // размер div 40x40 px
 			const gap = 0
 			const padding = 0
-			const divRowCount = 14
+			const divRowCount = windowWidth > 600 ? 14 : windowWidth > 400 ? 9 : 5
 			const divSize = Math.floor((containerWidth - padding * 2 - (divRowCount - 1) * gap) / divRowCount)
 
 			setStyles({
@@ -114,10 +118,16 @@ function GridContainer() {
 		};
 	}, []);
 
+	const activeIndexes = [11, 15, 37, 58]
+
 	return (
 		<div ref={containerRef} style={styles.container}>
 			{Array.from({ length: divCount }).map((_, index) => (
-				<div key={index} style={styles.divItem}></div>
+				<div key={index} style={styles.divItem}>
+					{ activeIndexes.includes(index) &&
+						<img src={img_abstract} alt="" className="" />
+						}
+				</div>
 			))}
 		</div>
 	);
