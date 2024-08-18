@@ -83,7 +83,7 @@ const Package = () => {
 		>
 
 			<div className="max-w-[580px] mx-auto text-white pt-9 pb-16">
-				<h2 className="text-[35px] mb-4">Packages</h2>
+				<h2 className="text-[20px] md:text-[45px] mb-4">Packages</h2>
 
 				<p className="text-[8px] md:text-[20px] font-medium font-[Inter] mb-[26px] max-w-[200px] md:max-w-none relative">
 					We provide tailored strategies for the most sophisticated projects to achieve the best outcome. <br /> <br />
@@ -102,6 +102,74 @@ const Package = () => {
 		</section>
 	)
 }
+
+
+const PackageCardDark = (
+	{ title, subtitle, followers, KOL, price, color, isActive, index }: { title: string, subtitle: string, followers: string, KOL: string, price: string, color: string, isActive: boolean, index: number }
+) => {
+
+	return (
+		<div
+			className={cn("package-card border snap-start md:opacity-100 transition-opacity border-white bg-white text-black text-center p-4 pb-[10px] w-[235px] aspect-auto md:aspect-auto md:w-auto ", isActive ? 'opacity-100' : 'opacity-50')}
+			style={{
+				borderColor: color,
+				boxShadow: `0px 0px 60px -10px ${color}`
+			}}
+			data-index={index}
+		>
+			<div className="min-h-[80px] mb-4">
+				<h3
+					className={"mb-[10px] text-[25px] "}
+					style={{ color: color }}
+				>{title}</h3>
+				<h4 className="text-[15px] font-[Inter] min-h-[50px]">{subtitle}</h4>
+			</div>
+
+
+			<div className="">
+				<div className="flex items-center justify-between">
+					<p className="font-medium font-[Inter] whitespace-nowrap text-[15px] ">Followers Cowered</p>
+					<div
+						className="min-w-[70px] text-center text-[15px]"
+						style={{
+							backgroundColor: color === 'default' ? "#46D2B0" : color,
+							color: color === 'default' ? "#081627" : 'white'
+						}}>{followers}</div>
+				</div>
+
+				{/* <hr className="mx-[26px] my-3" style={{ borderColor: color }} /> */}
+				<hr className="mx-[26px] my-3 border-black" />
+
+				<div className="flex items-center justify-between">
+					<p className="font-medium font-[Inter] whitespace-nowrap text-[15px] ">KOLs participaiting</p>
+					<div
+						className="min-w-[70px] text-center text-[15px]"
+						style={{
+							backgroundColor: color === 'default' ? "#46D2B0" : color,
+							color: color === 'default' ? "#081627" : 'white'
+						}}>{KOL}</div>
+				</div>
+
+				<strong className="my-[10px] text-[25px] block">${price}</strong>
+
+				<div
+					className="text-[13px] p-1 w-[166px] mx-auto mb-[10px]"
+					style={{
+						backgroundColor: color === 'default' ? "#081627" : color,
+						color: color === 'default' ? "#fff" : 'white'
+					}}
+				>Get</div>
+				<p
+					className="text-xs font-[Inter] font-medium"
+					style={{ color: color === 'default' ? "#46D2B0" : color }}
+				>Active till 15.09.24</p>
+			</div>
+		</div>
+	)
+}
+
+export default Package
+
 
 // const PackageCard = (
 // 	{ title, subtitle, followers, KOL, price, color }: { title: string, subtitle: string, followers: string, KOL: string, price: string, color: string }
@@ -162,69 +230,3 @@ const Package = () => {
 // 		</div>
 // 	)
 // }
-
-const PackageCardDark = (
-	{ title, subtitle, followers, KOL, price, color, isActive, index }: { title: string, subtitle: string, followers: string, KOL: string, price: string, color: string, isActive: boolean, index: number }
-) => {
-
-	return (
-		<div
-			className={cn("package-card border snap-start md:opacity-100 transition-opacity border-white bg-white text-black text-center p-4 pb-[10px] w-[235px] aspect-auto md:aspect-auto md:w-auto ", isActive ? 'opacity-100' : 'opacity-50')}
-			style={{
-				borderColor: color,
-				boxShadow: `0px 0px 60px -10px ${color}`
-			}}
-			data-index={index}
-		>
-			<div className="min-h-[80px] mb-4">
-				<h3
-					className={"mb-[10px] "}
-					style={{ color: color }}
-				>{title}</h3>
-				<h4 className="text-[15px] font-[Inter] ">{subtitle}</h4>
-			</div>
-
-
-			<div className="">
-				<div className="flex items-center justify-between">
-					<p className="font-medium font-[Inter] whitespace-nowrap text-[15px] ">Followers Cowered</p>
-					<div
-						className="min-w-[70px] text-center text-[11px]"
-						style={{
-							backgroundColor: color === 'default' ? "#46D2B0" : color,
-							color: color === 'default' ? "#081627" : 'white'
-						}}>{followers}</div>
-				</div>
-
-				{/* <hr className="mx-[26px] my-3" style={{ borderColor: color }} /> */}
-				<hr className="mx-[26px] my-3 border-black" />
-
-				<div className="flex items-center justify-between">
-					<p className="font-medium font-[Inter] whitespace-nowrap text-[15px] ">KOLs participaiting</p>
-					<div
-						className="min-w-[70px] text-center text-[11px]"
-						style={{
-							backgroundColor: color === 'default' ? "#46D2B0" : color,
-							color: color === 'default' ? "#081627" : 'white'
-						}}>{KOL}</div>
-				</div>
-
-				<strong className="my-[10px] text-[18px] block">${price}</strong>
-
-				<div
-					className="text-[13px] p-1 w-[166px] mx-auto mb-[10px]"
-					style={{
-						backgroundColor: color === 'default' ? "white" : color,
-						color: color === 'default' ? "#081627" : 'white'
-					}}
-				>Get</div>
-				<p
-					className="text-xs font-[Inter] font-medium"
-					style={{ color: color === 'default' ? "#46D2B0" : color }}
-				>Active till 15.09.24</p>
-			</div>
-		</div>
-	)
-}
-
-export default Package

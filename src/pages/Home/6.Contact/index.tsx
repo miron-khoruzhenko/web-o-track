@@ -17,7 +17,7 @@ const Contact = () => {
 		<section className='' id='contactUs'>
 			<div className="max-w-[580px] mx-auto text-[#081728] mb-[100px]">
 				<div className="flex items-center justify-start gap-3">
-					<h2 className="text-[18px] md:text-[35px] text-left px-4 ">Contact Us</h2>
+					<h2 className="text-[20px] md:text-[35px] text-left px-4 ">Contact Us</h2>
 					<img src={person_icon} alt="" className="w-[30px] md:w-auto" />
 				</div>
 

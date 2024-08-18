@@ -10,6 +10,9 @@ export default {
       colors: {
         green: '#46D2B0',
         dark: '#071627',
+      },
+      fontFamily: {
+        'ascii' : 'Ascii, monospace'
       }
     },
   },

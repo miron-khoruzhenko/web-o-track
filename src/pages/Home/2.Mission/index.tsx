@@ -17,10 +17,10 @@ const Mission = () => {
 				{/* <FloatingDiv className='right-full top-full rotate-[-30deg] -translate-y-[20%] translate-x-[20%] animate-' /> */}
 
 				<div className="flex items-center justify-start mb-5">
-					<h2 className="text-[30px] whitespace-nowrap tracking-tighter">Our Mission</h2>
+					<h2 className="text-[20px] md:text-[45px] whitespace-nowrap tracking-tighter">Our Mission</h2>
 					<img src={plane_img} alt="" className="ml-1 size-10" />
 				</div>
-				<p className="text-20 font-medium font-[Inter] text-[#071627]">
+				<p className="text-[10px] md:text-20 font-medium font-[Inter] text-[#071627]">
 					0xTrack bridges the gap between <br />innovative projects and top-tier <br /> marketing  strategies. <br /><br />
 
 					With the biggest KOL base on the <br /> market and deep understanding of the <br /> WEB3 space, we ensure your project <br /> gets the attention it deserves.

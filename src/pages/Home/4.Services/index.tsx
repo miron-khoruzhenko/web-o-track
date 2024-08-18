@@ -19,7 +19,7 @@ const Services = () => {
 			}} />
 
 			<div className="max-w-[580px] mx-auto relative z-30 ">
-				<h2 className="text-[35px] mb-4 text-center mt-[75px] ">Services</h2>
+				<h2 className="text-[20px] md:text-[45px] mb-4 text-center mt-[75px] ">Services</h2>
 				<p className="font-medium text-[12px] md:text-[15px] font-[Inter] mb-12 text-center"> team takes care of everything from <br className='block md:hidden' /> strategy <br className='hidden md:block' /> development to execution</p>
 
 				<div className="grid grid-cols-5 bg-white relative z-30 mb-[70px]">
@@ -27,14 +27,14 @@ const Services = () => {
 						<img src={icon1} alt="" className="" />
 					</div>
 					<div className="col-span-3 pt-2 pb-4 pr-4 ">
-						<h3 className="mb-5">On-hands Approach</h3>
+						<h3 className="mb-5 text-[15px] md:text-[20px]">On-hands Approach</h3>
 						<p className="font-medium text-[10px] md:text-[15px] font-[Inter]">Our team takes care of everything from strategy development to execution, ensuring maximum engagement and profitability for your project.</p>
 					</div>
 				</div>
 
 				<div className="grid grid-cols-5 bg-white relative z-30">
 					<div className="col-span-3 pt-2 pb-4 pl-4 ">
-						<h3 className="mb-5">Off-hands Approach</h3>
+						<h3 className="mb-5 text-[15px] md:text-[20px]">Off-hands Approach</h3>
 						<p className="font-medium text-[10px] md:text-[15px] font-[Inter]">As a connector, we link your project with top KOLs, fostering strong relationships and achieving expansive impact quickly.</p>
 					</div>
 					<div className="flex items-center justify-center col-span-2 bg-gradient-to-l from-[rgba(244,58,102,.35)] to-white">
@@ -55,13 +55,13 @@ const Services = () => {
 						}}
 						className="py-[40px] px-[50px] relative text-white">
 						<div className='w-[3px] h-[calc(100%-16*2px)] bg-white absolute left-[14px] top-[16px]' />
-						<h3 className="mb-4 text-[18px] md:text-[23px]">0 DIRECT cost</h3>
+						<h3 className="mb-4 text-[18px] md:text-[35px]">0 DIRECT cost</h3>
 						<p className="font-medium text-[17px] font-[Inter]">There's no DIRECT cost to your project. </p>
 						<img src={arrow_icon} alt="" className="absolute bottom-3 right-2 w-[37px]" />
 					</div>
 
 					<div className="py-[35px] px-[50px] relative">
-						<p className="font-medium text-[17px] font-[Inter]">Our income is generated through partnerships with industry KOLs, providing a win-win for all parties. </p>
+						<p className="font-medium text-[12px] md:text-[17px] font-[Inter]">Our income is generated through partnerships with industry KOLs, providing a win-win for all parties. </p>
 						<img src={icon3} alt="" className="absolute bottom-0 left-0" />
 					</div>
 				</div>
