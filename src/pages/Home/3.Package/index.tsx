@@ -110,17 +110,17 @@ const PackageCardDark = (
 
 	return (
 		<div
-			className={cn("package-card border snap-start md:opacity-100 transition-opacity border-white bg-white text-black text-center p-4 pb-[10px] w-[235px] aspect-auto md:aspect-auto md:w-auto ", isActive ? 'opacity-100' : 'opacity-50')}
+			className={cn("package-card group border snap-start md:opacity-100 transition-opacity border-white bg-white text-black text-center p-4 pb-[10px] w-[235px] aspect-auto md:aspect-auto md:w-auto hover:shadow-[0px_0px_60px_-10px_#F43A66] hover:border-[#f43a66] ", isActive ? 'opacity-100' : 'opacity-50')}
 			style={{
-				borderColor: color,
-				boxShadow: `0px 0px 60px -10px ${color}`
+				// borderColor: color,
+				// boxShadow: `0px 0px 60px -10px ${color}`
 			}}
 			data-index={index}
 		>
 			<div className="min-h-[80px] mb-4">
 				<h3
-					className={"mb-[10px] text-[25px] "}
-					style={{ color: color }}
+					className={"mb-[10px] text-[25px] transition-colors group-hover:text-[#F43A66] "}
+					// style={{ color: color }}
 				>{title}</h3>
 				<h4 className="text-[15px] font-[Inter] min-h-[50px]">{subtitle}</h4>
 			</div>
@@ -128,12 +128,12 @@ const PackageCardDark = (
 
 			<div className="">
 				<div className="flex items-center justify-between">
-					<p className="font-medium font-[Inter] whitespace-nowrap text-[15px] ">Followers Cowered</p>
+					<p className="font-medium font-[Inter] whitespace-nowrap text-[15px]  ">Followers Cowered</p>
 					<div
-						className="min-w-[70px] text-center text-[15px]"
+						className="min-w-[70px] text-center text-[15px] bg-[#46D2B0] transition-colors group-hover:bg-[#F43A66] text-[#081627]  group-hover:text-[#fff]"
 						style={{
-							backgroundColor: color === 'default' ? "#46D2B0" : color,
-							color: color === 'default' ? "#081627" : 'white'
+							// backgroundColor: color === 'default' ? "#46D2B0" : color,
+							// color: color === 'default' ? "#081627" : 'white'
 						}}>{followers}</div>
 				</div>
 
@@ -143,25 +143,25 @@ const PackageCardDark = (
 				<div className="flex items-center justify-between">
 					<p className="font-medium font-[Inter] whitespace-nowrap text-[15px] ">KOLs participaiting</p>
 					<div
-						className="min-w-[70px] text-center text-[15px]"
+						className="min-w-[70px] text-center text-[15px] bg-[#46D2B0] transition-colors group-hover:bg-[#F43A66] text-[#081627]  group-hover:text-[#fff]"
 						style={{
-							backgroundColor: color === 'default' ? "#46D2B0" : color,
-							color: color === 'default' ? "#081627" : 'white'
+							// backgroundColor: color === 'default' ? "#46D2B0" : color,
+							// color: color === 'default' ? "#081627" : 'white'
 						}}>{KOL}</div>
 				</div>
 
 				<strong className="my-[10px] text-[25px] block">${price}</strong>
 
 				<div
-					className="text-[13px] p-1 w-[166px] mx-auto mb-[10px]"
+					className="text-[13px] p-1 w-[166px] mx-auto mb-[10px] bg-[#080127] transition-colors group-hover:bg-[#F43A66] text-white"
 					style={{
-						backgroundColor: color === 'default' ? "#081627" : color,
-						color: color === 'default' ? "#fff" : 'white'
+						// backgroundColor: color === 'default' ? "#081627" : color,
+						// color: color === 'default' ? "#fff" : 'white'
 					}}
 				>Get</div>
 				<p
-					className="text-xs font-[Inter] font-medium"
-					style={{ color: color === 'default' ? "#46D2B0" : color }}
+					className="text-xs font-[Inter] font-medium text-[#46D2B0] transition-colors group-hover:text-[#F43A66]"
+					// style={{ color: color === 'default' ? "#46D2B0" : color }}
 				>Active till 15.09.24</p>
 			</div>
 		</div>
