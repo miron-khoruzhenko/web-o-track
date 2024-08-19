@@ -105,7 +105,7 @@ const Package = () => {
 
 
 const PackageCardDark = (
-	{ title, subtitle, followers, KOL, price, color, isActive, index }: { title: string, subtitle: string, followers: string, KOL: string, price: string, color: string, isActive: boolean, index: number }
+	{ title, subtitle, followers, KOL, price, isActive, index }: { title: string, subtitle: string, followers: string, KOL: string, price: string, color: string, isActive: boolean, index: number }
 ) => {
 
 	return (
