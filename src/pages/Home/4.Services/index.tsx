@@ -24,7 +24,7 @@ const Services = () => {
 
 				<div className="grid grid-cols-5 bg-white relative z-30 mb-[70px]">
 					<div className="flex items-center justify-center col-span-2 bg-white bg-gradient-to-r from-[rgba(70,210,176,.35)] to-white">
-						<img src={icon1} alt="" className="" />
+						<img src={icon1} alt="" className="size-11 md:size-16" />
 					</div>
 					<div className="col-span-3 pt-2 pb-4 pr-4 ">
 						<h3 className="mb-5 text-[15px] md:text-[20px]">On-hands Approach</h3>
@@ -38,7 +38,7 @@ const Services = () => {
 						<p className="font-medium text-[10px] md:text-[15px] font-[Inter]">As a connector, we link your project with top KOLs, fostering strong relationships and achieving expansive impact quickly.</p>
 					</div>
 					<div className="flex items-center justify-center col-span-2 bg-gradient-to-l from-[rgba(244,58,102,.35)] to-white">
-						<img src={icon2} alt="" className="" />
+						<img src={icon2} alt="" className="size-11 md:size-16" />
 					</div>
 				</div>
 

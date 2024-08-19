@@ -12,7 +12,7 @@ const Mission = () => {
 			style={{
 				boxShadow: "0px 4px 20px 0px rgba(0, 0, 0, 0.35)"
 			}}
-			className="p-5 bg-white max-w-[400px] relative">
+			className="p-5 bg-white max-w-[515px] relative">
 				{/* <FloatingDiv className='left-full bottom-full translate-y-[20%] -translate-x-[20%] -rotate-45' /> */}
 				{/* <FloatingDiv className='right-full top-full rotate-[-30deg] -translate-y-[20%] translate-x-[20%] animate-' /> */}
 
@@ -20,10 +20,10 @@ const Mission = () => {
 					<h2 className="text-[20px] md:text-[45px] whitespace-nowrap tracking-tighter">Our Mission</h2>
 					<img src={plane_img} alt="" className="ml-1 size-10" />
 				</div>
-				<p className="text-[10px] md:text-20 font-medium font-[Inter] text-[#071627]">
-					0xTrack bridges the gap between <br />innovative projects and top-tier <br /> marketing  strategies. <br /><br />
+				<p className="text-[10px] md:text-[22px] font-medium font-[Inter] text-[#071627]">
+					0xTrack bridges the gap between innovative projects and top-tier marketing  strategies. <br /><br />
 
-					With the biggest KOL base on the <br /> market and deep understanding of the <br /> WEB3 space, we ensure your project <br /> gets the attention it deserves.
+					With the biggest KOL base on the market and deep understanding of the WEB3 space, we ensure your project gets the attention it deserves.
 				</p>
 			</div>
 			</div>
@@ -125,7 +125,7 @@ function GridContainer() {
 			{Array.from({ length: divCount }).map((_, index) => (
 				<div key={index} style={styles.divItem}>
 					{ activeIndexes.includes(index) &&
-						<img src={img_abstract} alt="" className="" />
+						<img src={img_abstract} alt="" className="size-8 md:size-20" />
 						}
 				</div>
 			))}

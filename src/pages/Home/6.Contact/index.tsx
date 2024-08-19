@@ -76,7 +76,7 @@ const Contact = () => {
 					<p className="text-[25px] flex items-center justify-start align-bottom"><span className="text-[15px] block pt-2">x</span>TRACK</p>
 				</div>
 
-				<ul className="hidden md:flex items-center justify-between text-[9px] gap-8">
+				<ul className="hidden md:flex items-center justify-between text-[15px] gap-8">
 					<li className="">SOCIAL</li>
 					<li className="">PACKAGES</li>
 					<li className="">Clients</li>
