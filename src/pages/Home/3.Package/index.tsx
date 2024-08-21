@@ -117,9 +117,9 @@ const PackageCardDark = (
 			}}
 			data-index={index}
 		>
-			<div className="min-h-[80px] mb-4">
+			<div className="min-h-[80px]">
 				<h3
-					className={"mb-[10px] text-[25px] transition-colors group-hover:text-[#F43A66] "}
+					className={" text-[25px] transition-colors group-hover:text-[#F43A66] "}
 					// style={{ color: color }}
 				>{title}</h3>
 				<h4 className="text-[15px] font-[Inter] min-h-[50px]">{subtitle}</h4>
@@ -150,10 +150,10 @@ const PackageCardDark = (
 						}}>{KOL}</div>
 				</div>
 
-				<strong className="my-[10px] text-[25px] block">${price}</strong>
+				<strong className="mt-[10px] text-[25px] block">${price}</strong>
 
 				<div
-					className="text-[13px] p-1 w-[166px] mx-auto mb-[10px] bg-[#080127] transition-colors group-hover:bg-[#F43A66] text-white"
+					className="text-[13px] p-1 w-[166px] mx-auto bg-[#080127] transition-colors group-hover:bg-[#F43A66] text-white"
 					style={{
 						// backgroundColor: color === 'default' ? "#081627" : color,
 						// color: color === 'default' ? "#fff" : 'white'
