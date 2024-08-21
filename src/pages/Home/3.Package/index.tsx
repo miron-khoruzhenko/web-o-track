@@ -89,7 +89,7 @@ const Package = () => {
 					We provide tailored strategies for the most sophisticated projects to achieve the best outcome. <br /> <br />
 
 					Just tell us your goals, and we will make sure to come up with an optimal solution. Here are our 4 most popular promo packages:
-					<img src={arrow_icon} alt="" className="absolute left-[calc(245px+2rem)] bottom-0 md:hidden" />
+					<img src={arrow_icon} alt="" className="absolute left-[calc(245px+2rem)] bottom-0 w-5 md:hidden" />
 				</p>
 
 

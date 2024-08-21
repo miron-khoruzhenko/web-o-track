@@ -33,7 +33,7 @@ const Hero = () => {
 						<img src={logo_text} alt="" className="h-[34px] md:h-auto" />
 					</div>
 
-					<p className="font-[Inter] mb-[4%] text-[8px] md:text-base ">
+					<p className="font-[Inter] mb-[4%] text-[8px] md:text-base text-center ">
 						It's not about ideas. It's about <span className="font-ascii ml-1 align-top text-[#F43A66]">making ideas happen</span>
 					</p>
 				</div>
@@ -65,7 +65,7 @@ const Hero = () => {
 					</div>
 
 					<button className=" text-center mx-auto flex items-center justify-center gap-1 border-[2px] border-black bg-white p-4">
-						<span className="text-[10px] md:text-[15px] tracking-tighter whitespace-nowrap">Contact us today !</span> <img src={arrow_icon} alt="" className="invert" />
+						<span className="text-[10px] md:text-[15px] tracking-tighter whitespace-nowrap">Contact us today !</span> <img src={arrow_icon} alt="" className="invert w-[22px] ml-2" />
 					</button>
 				</div>
 			</div>

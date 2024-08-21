@@ -15,7 +15,7 @@ import logo_text from '@assets/1.Hero/logo_text.png'
 const Contact = () => {
 	return (
 		<section className='' id='contactUs'>
-			<div className="max-w-[580px] mx-auto text-[#081728] mb-[100px]">
+			<div className="max-w-[580px] mx-auto text-[#081728] mb-7 md:mb-[100px]">
 				<div className="flex items-center justify-start gap-3">
 					<h2 className="text-[20px] md:text-[35px] text-left px-4 ">Contact Us</h2>
 					<img src={person_icon} alt="" className="w-[30px] md:w-auto" />
@@ -54,14 +54,14 @@ const Contact = () => {
 				</div>
 			</div>
 
-			<div className="bg-dark py-[43px] text-white">
-				<div className="md:w-[580px] bg-gradient-to-r from-white to-white/0 p-px mx-auto ">
-					<div className="h-full w-full bg-dark flex items-center justify-between py-[13px] px-[17px]">
-						<p className="leading-[3] text-[7px] md:text-[10px] whitespace-nowrap">
+			<div className="bg-dark py-[43px] text-white pl-6 pr-3">
+				<div className="md:w-[580px] bg-gradient-to-r from-white via-white/20 to-white/0 p-px mx-auto ">
+					<div className="h-full w-full bg-dark flex items-center justify-between py-1 px-3 md:py-[13px] md:px-[17px]">
+						<p className="text-[10px] md:text-[15px] leading-[25px] md:leading-[37.5px] whitespace-nowrap">
 							Fuelling top-tier projects <br /> with advisory and marketing
 						</p>
 
-						<button className='bg-white text-[#081728] whitespace-nowrap px-2 md:px-9 py-4 block text-[9px]'>
+						<button className='bg-white text-[#081728] whitespace-nowrap px-2 md:px-9 py-2 md:py-4 block text-[12px] md:text-[15px]'>
 							Get in touch
 						</button>
 					</div>
@@ -69,7 +69,7 @@ const Contact = () => {
 
 			</div>
 
-			<div className="max-w-[580px] mx-auto py-[40px] flex justify-between items-center">
+			<div className="max-w-[580px] mx-auto py-5 md:py-[40px] flex justify-between items-center">
 
 				<div className="items-center justify-start hidden md:flex">
 					<img src={logo_0} alt="" className="block pb-2 mr-2 h-9" />

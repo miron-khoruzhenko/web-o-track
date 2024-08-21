@@ -60,9 +60,9 @@ const Services = () => {
 						<img src={arrow_icon} alt="" className="absolute bottom-3 right-2 w-[37px]" />
 					</div>
 
-					<div className="py-[35px] px-[50px] relative">
+					<div className="py-[35px] px-[30px] md:px-[50px] relative">
 						<p className="font-medium text-[12px] md:text-[17px] font-[Inter]">Our income is generated through partnerships with industry KOLs, providing a win-win for all parties. </p>
-						<img src={icon3} alt="" className="absolute bottom-0 left-0" />
+						<img src={icon3} alt="" className="absolute bottom-0 left-0 size-[40px]" />
 					</div>
 				</div>
 
