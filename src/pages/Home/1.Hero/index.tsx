@@ -7,8 +7,12 @@ import arrow_icon from '@assets/1.Hero/arrow.png'
 
 import bg_img_1 from '@assets/1.Hero/img_o_1.png'
 import bg_img_2 from '@assets/1.Hero/img_o_2.png'
+import { useState } from 'react'
+
+import { twMerge as cn } from 'tailwind-merge'
 
 const Hero = () => {
+	const [isNavOpen, setIsNavOpen] = useState(false)
 	// const squareSize = 150
 
 	return (
@@ -24,18 +28,37 @@ const Hero = () => {
 			<img src={bg_img_1} alt="" className="absolute max-w-[35%] md:max-w-[30%]  z-0 [transform:rotateY(180deg)] md:[transform:rotateY(0deg)] md:w-auto top-28 md:top-[5%] -right-6 md:right-auto md:left-0" />
 			<img src={bg_img_2} alt="" className="absolute max-w-[35%] md:max-w-[25%]  z-0 [transform:rotateY(180deg)] md:[transform:rotateY(0deg)] md:w-auto bottom-12 md:bottom-[5%] -left-6 md:left-auto md:right-0" />
 
-			<div className="max-w-[580px] mx-auto pt-4 ">
+			<div className="max-w-[580px] mx-auto md:pt-4 ">
 
-				<div className="border-b border-black md:border-none pb-1 pl-2 ">
-					<div className="flex items-center justify-start md:justify-center mb-[4%]">
+				<div className="border-b border-black md:border-none pb-1 px-2 relative ">
+					<div className="flex items-center justify-between md:justify-center mb-[4%] pr-6 pt-2">
 						{/* <img src={logo_0} alt="" className="block pt-2 mr-2" />
 								<p className="text-[70px] flex items-center justify-start"><span className="text-[40px] block pt-5">x</span>TRACK</p> */}
 						<img src={logo_text} alt="" className="h-[34px] md:h-auto" />
+
 					</div>
 
-					<p className="font-[Inter] mb-[4%] text-[8px] md:text-base text-center ">
+					<p className="font-[Inter] md:mb-[4%] text-[8px] md:text-base text-left md:text-center ">
 						It's not about ideas. It's about <span className="font-ascii ml-1 align-top text-[#F43A66]">making ideas happen</span>
 					</p>
+					<div
+						onClick={() => setIsNavOpen(!isNavOpen)}
+						className="flex md:hidden flex-col gap-[6px] absolute right-6 top-1/2 -translate-y-1/2 cursor-pointer z-[60] bg-white p-2 rounded">
+						<div className="w-6 h-[2px] rounded-full bg-[#183351]"></div>
+						<div className="w-6 h-[2px] rounded-full bg-[#183351]"></div>
+						<div className="w-6 h-[2px] rounded-full bg-[#183351]"></div>
+					</div>
+
+					<div className={cn("md:hidden transition-opacity z-50 text-white fixed top-0 left-0 right-0 bottom-0 bg-black/70 flex justify-center items-center", isNavOpen ? 'opacity-100' : 'opacity-0')}>
+
+						<ul className={cn('transition-transform flex flex-col gap-4 justify-center items-center', isNavOpen ? 'translate-x-0' : 'translate-x-[100vw]')}>
+							<li className="cursor-pointer">our mission</li>
+							<li className="cursor-pointer">services</li>
+							<li className="cursor-pointer">clients</li>
+							<li className="cursor-pointer">contact us</li>
+						</ul>
+					</div>
+
 				</div>
 
 				<div className="full hidden md:grid grid-cols-4 mt-[4%] text-[17px] text-center mb-[72px]">
