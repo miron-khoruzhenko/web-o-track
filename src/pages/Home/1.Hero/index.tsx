@@ -34,7 +34,7 @@ const Hero = () => {
 					<div className="flex items-center justify-between md:justify-center mb-[4%] pr-6 pt-2">
 						{/* <img src={logo_0} alt="" className="block pt-2 mr-2" />
 								<p className="text-[70px] flex items-center justify-start"><span className="text-[40px] block pt-5">x</span>TRACK</p> */}
-						<img src={logo_text} alt="" className="h-[34px] md:h-auto" />
+						<img src={logo_text} alt="" className="h-[34px] md:h-auto max-w-[350px]" />
 
 					</div>
 
@@ -49,7 +49,7 @@ const Hero = () => {
 						<div className="w-6 h-[2px] rounded-full bg-[#183351]"></div>
 					</div>
 
-					<div className={cn("md:hidden transition-opacity z-50 text-white fixed top-0 left-0 right-0 bottom-0 bg-black/70 flex justify-center items-center", isNavOpen ? 'opacity-100' : 'opacity-0')}>
+					<div className={cn("md:hidden transition-transform z-50 text-white fixed top-0 left-0 right-0 bottom-0 bg-black/70 flex justify-center items-center",  isNavOpen ? 'translate-x-0' : 'translate-x-[100vw]')}>
 
 						<ul className={cn('transition-transform flex flex-col gap-4 justify-center items-center', isNavOpen ? 'translate-x-0' : 'translate-x-[100vw]')}>
 							<li className="cursor-pointer">our mission</li>

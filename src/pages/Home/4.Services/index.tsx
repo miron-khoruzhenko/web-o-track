@@ -11,12 +11,16 @@ import img from '@assets/4.Services/o_img.png'
 const Services = () => {
 	return (
 		<section className='relative pb-[94px] overflow-x-hidden' id='services'>
-			<img src={img} alt="" className="absolute max-w-[30%] [transform:rotateY(180deg)] md:[transform:rotateY(deg)] md:w-auto bottom-auto md:top-auto md:bottom-6 z-20 -left-[7%] top-[13%]  " style={{
-				filter: 'hue-rotate(180deg)'
-			}} />
-			<img src={img} alt="" className="absolute max-w-[50%] z-0 [transform:rotateY(0deg)_rotateZ(-45deg)] md:[transform:rotateY(0deg)] md:w-auto top-[30%] md:top-6 -right-[5%]" style={{
-				filter: 'hue-rotate(180deg)'
-			}} />
+			<img src={img} alt="" className="absolute max-w-[30vw] [transform:rotateY(180deg)] md:[transform:rotateY(deg)] md:w-auto bottom-auto md:top-auto md:bottom-6 z-20 -left-[7%] top-[13%]  "
+			// style={{
+			// 	filter: 'hue-rotate(180deg)'
+			// }} 
+			/>
+			<img src={img} alt="" className="absolute max-w-[35vw] z-0 [transform:rotateY(0deg)_rotateZ(-45deg)] md:[transform:rotateY(0deg)] md:w-auto top-[30%] md:top-6 -right-[5%]"
+			// style={{
+			// 	filter: 'hue-rotate(180deg)'
+			// }} 
+			/>
 
 			<div className="max-w-[580px] mx-auto relative z-30 ">
 				<h2 className="text-[20px] md:text-[45px] mb-4 text-center mt-[75px] ">Services</h2>

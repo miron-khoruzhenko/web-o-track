@@ -18,7 +18,7 @@ const Contact = () => {
 			<div className="max-w-[580px] mx-auto text-[#081728] mb-7 md:mb-[100px]">
 				<div className="flex items-center justify-start gap-3">
 					<h2 className="text-[20px] md:text-[35px] text-left px-4 ">Contact Us</h2>
-					<img src={person_icon} alt="" className="w-[30px] md:w-auto" />
+					<img src={person_icon} alt="" className="w-[30px] md:w-[40px]" />
 				</div>
 
 				<p className="font-medium font-[Inter] text-[12px] md:text-[15px] px-4">
