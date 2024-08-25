@@ -81,13 +81,13 @@ const Hero = () => {
 				{/* <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"> */}
 				<div className=" absolute md:static top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 md:translate-x-0 md:translate-y-0">
 
-					<h1 className=" text-center text-[20px] md:text-[45px] whitespace-nowrap mb-[60px] tracking-tighter mx-auto">”Top-tier marketing”</h1>
+					<h1 className=" text-center text-[24px] md:text-[45px] whitespace-nowrap mb-5 md:mb-[60px] tracking-tighter mx-auto">”Top-tier marketing”</h1>
 
 					<div className="">
-						<p className="font-[Inter] text-[8px] text-center md:text-[15px] mb-[63px]">At 0xTrack, we specialize in delivering top-tier marketing <br /> solutions for the most promising WEB3 projects.</p>
+						<p className="font-[Inter] text-[12px] text-center md:text-[15px] mb-6 md:mb-[63px]">At 0xTrack, we specialize in delivering top-tier marketing  solutions for the most promising WEB3 projects.</p>
 					</div>
 
-					<button className=" text-center mx-auto flex items-center justify-center gap-1 border-[2px] border-black bg-white p-4">
+					<button className=" text-center mx-auto flex items-center justify-center gap-1 border-[2px] border-black bg-white p-2 md:p-4">
 						<span className="text-[10px] md:text-[15px] tracking-tighter whitespace-nowrap">Contact us today !</span> <img src={arrow_icon} alt="" className="invert w-[22px] ml-2" />
 					</button>
 				</div>

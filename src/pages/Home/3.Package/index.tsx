@@ -72,6 +72,21 @@ const Package = () => {
 		};
 	}, []);
 
+	const handleScrollToNext = () => {
+		if (!containerRef.current)
+			return;
+		
+		const container = containerRef.current as HTMLElement;
+		const elements = container.querySelectorAll('.package-card');
+		const nextIndex = activeIndex + 1;
+
+		if (nextIndex < elements.length) {
+			elements[nextIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+		}
+	}
+
+
+
 	return (
 		<section
 			className='bg-dark relative px-6'
@@ -89,7 +104,12 @@ const Package = () => {
 					We provide tailored strategies for the most sophisticated projects to achieve the best outcome. <br /> <br />
 
 					Just tell us your goals, and we will make sure to come up with an optimal solution. Here are our 4 most popular promo packages:
-					<img src={arrow_icon} alt="" className="absolute left-[calc(245px+2rem)] bottom-0 w-5 md:hidden" />
+					<img
+						src={arrow_icon}
+						alt=""
+						className="absolute left-[calc(245px+2rem)] bottom-0 w-5 md:hidden"
+						onClick={handleScrollToNext}
+					/>
 				</p>
 
 
@@ -120,17 +140,17 @@ const PackageCardDark = (
 			<div className="min-h-[80px]">
 				<h3
 					className={" text-[25px] transition-colors group-hover:text-[#F43A66] "}
-					// style={{ color: color }}
+				// style={{ color: color }}
 				>{title}</h3>
 				<h4 className="text-[15px] font-[Inter] min-h-[50px]">{subtitle}</h4>
 			</div>
 
 
 			<div className="">
-				<div className="flex items-center justify-between">
-					<p className="font-medium font-[Inter] whitespace-nowrap text-[15px]  ">Followers Cowered</p>
+				<div className="flex items-center justify-between gap-6">
+					<p className="font-medium font-[Inter] whitespace-nowrap text-[12px] md:text-[15px]  ">Followers Cowered</p>
 					<div
-						className="min-w-[70px] text-center text-[15px] bg-[#46D2B0] transition-colors group-hover:bg-[#F43A66] text-[#081627]  group-hover:text-[#fff]"
+						className="min-w-[70px] text-center text-[12px] md:text-[15px] bg-[#46D2B0] transition-colors group-hover:bg-[#F43A66] text-[#081627]  group-hover:text-[#fff]"
 						style={{
 							// backgroundColor: color === 'default' ? "#46D2B0" : color,
 							// color: color === 'default' ? "#081627" : 'white'
@@ -140,10 +160,10 @@ const PackageCardDark = (
 				{/* <hr className="mx-[26px] my-3" style={{ borderColor: color }} /> */}
 				<hr className="mx-[26px] my-3 border-black" />
 
-				<div className="flex items-center justify-between">
-					<p className="font-medium font-[Inter] whitespace-nowrap text-[15px] ">KOLs participaiting</p>
+				<div className="flex items-center justify-between gap-6">
+					<p className="font-medium font-[Inter] whitespace-nowrap text-[12px] md:text-[15px] ">KOLs participaiting</p>
 					<div
-						className="min-w-[70px] text-center text-[15px] bg-[#46D2B0] transition-colors group-hover:bg-[#F43A66] text-[#081627]  group-hover:text-[#fff]"
+						className="min-w-[70px] text-center text-[12px] md:text-[15px] bg-[#46D2B0] transition-colors group-hover:bg-[#F43A66] text-[#081627]  group-hover:text-[#fff]"
 						style={{
 							// backgroundColor: color === 'default' ? "#46D2B0" : color,
 							// color: color === 'default' ? "#081627" : 'white'
@@ -161,7 +181,7 @@ const PackageCardDark = (
 				>Get</div>
 				<p
 					className="text-xs font-[Inter] font-medium text-[#46D2B0] transition-colors group-hover:text-[#F43A66]"
-					// style={{ color: color === 'default' ? "#46D2B0" : color }}
+				// style={{ color: color === 'default' ? "#46D2B0" : color }}
 				>Active till 15.09.24</p>
 			</div>
 		</div>

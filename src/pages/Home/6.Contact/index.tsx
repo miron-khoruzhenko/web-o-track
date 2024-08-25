@@ -1,6 +1,8 @@
-import person_icon from '@assets/6.Contact/icon_person.png'
+// import person_icon from '@assets/6.Contact/icon_person.png'
+import person_icon from '@assets/6.Contact/icon_person_white.png'
 
-import social_icon_1 from '@assets/6.Contact/icon_mail.svg'
+// import social_icon_1 from '@assets/6.Contact/icon_mail.svg'
+import social_icon_1 from '@assets/6.Contact/icon_mail.png'
 import social_icon_2 from '@assets/6.Contact/icon_x.svg'
 import social_icon_3 from '@assets/6.Contact/icon_tg.svg'
 
@@ -14,20 +16,21 @@ import logo_text from '@assets/1.Hero/logo_text.png'
 
 const Contact = () => {
 	return (
-		<section className='' id='contactUs'>
-			<div className="max-w-[580px] mx-auto text-[#081728] mb-7 md:mb-[100px]">
+		<section className='bg-dark pt-[100px] ' id='contactUs'>
+
+			<div className="max-w-[580px] mx-auto text-white mb-7 md:mb-[60px]">
 				<div className="flex items-center justify-start gap-3">
 					<h2 className="text-[20px] md:text-[35px] text-left px-4 ">Contact Us</h2>
 					<img src={person_icon} alt="" className="w-[30px] md:w-[40px]" />
 				</div>
 
-				<p className="font-medium font-[Inter] text-[12px] md:text-[15px] px-4">
+				<p className="font-medium font-[Inter] text-[12px] md:text-[15px] mb-4 px-4">
 					Ready to amplify your project's reach?  <br />
 					Contact us today!
 				</p>
 
 				<div className="grid grid-cols-3 gap-5 font-medium font-[Inter] text-[12px] mt-[10px] px-2">
-					<div className="bg-[#081728] text-white p-1 pt-4">
+					<div className="bg-[#fff] text-black p-1 pt-4">
 						<div className="flex items-center justify-start gap-1 mb-2 ml-2">
 							<img src={social_icon_1} alt="" className="" />
 							<h3 className="">Mail</h3>
@@ -35,7 +38,7 @@ const Contact = () => {
 						<img src={img1} alt="" className="" />
 
 					</div>
-					<div className="bg-[#081728] text-[#1CF1D5] p-1 pt-4">
+					<div className="bg-[#fff] text-[#1CF1D5] p-1 pt-4">
 						<div className="flex items-center justify-start gap-1 mb-2 ml-2">
 							<img src={social_icon_2} alt="" className="" />
 							<h3 className="">Twitter</h3>
@@ -43,7 +46,7 @@ const Contact = () => {
 						<img src={img2} alt="" className="" />
 
 					</div>
-					<div className="bg-[#081728] text-[#FD5D90] p-1 pt-4">
+					<div className="bg-[#fff] text-[#FD5D90] p-1 pt-4">
 						<div className="flex items-center justify-start gap-1 mb-2 ml-2">
 							<img src={social_icon_3} alt="" className="" />
 							<h3 className="">Telegram</h3>
@@ -69,6 +72,8 @@ const Contact = () => {
 
 			</div>
 
+			<div className="w-full bg-white">
+
 			<div className="max-w-[580px] mx-auto py-5 md:py-[40px] flex justify-between items-center">
 
 				<div className="items-center justify-start hidden md:flex">
@@ -84,6 +89,7 @@ const Contact = () => {
 				</ul>
 
 				<img src={logo_text} alt="" className="h-[34px] md:h-auto mx-4 block md:hidden" />
+			</div>
 			</div>
 
 		</section>
