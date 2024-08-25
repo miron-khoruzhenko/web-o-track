@@ -1,4 +1,3 @@
-import React from 'react'
 import tri_img from '@assets/2.5.Highlights/triangle.png'
 import highlight_items from './highlights_items'
 
