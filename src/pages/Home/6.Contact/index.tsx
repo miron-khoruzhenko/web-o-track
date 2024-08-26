@@ -1,8 +1,8 @@
 // import person_icon from '@assets/6.Contact/icon_person.png'
 import person_icon from '@assets/6.Contact/icon_person_white.png'
 
-// import social_icon_1 from '@assets/6.Contact/icon_mail.svg'
-import social_icon_1 from '@assets/6.Contact/icon_mail.png'
+import social_icon_1 from '@assets/6.Contact/icon_mail.svg'
+// import social_icon_1 from '@assets/6.Contact/icon_mail.png'
 import social_icon_2 from '@assets/6.Contact/icon_x.svg'
 import social_icon_3 from '@assets/6.Contact/icon_tg.svg'
 

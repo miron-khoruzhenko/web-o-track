@@ -90,8 +90,10 @@ const Clients = () => {
 								activeIndex === index ? 'opacity-100' : 'opacity-60')}
 								style={{ backgroundColor: item.color }}
 							>
-								<img src={item.img} alt="" className="" />
-								<p className={cn("text-[20px]", item.isLight? 'text-[#071627]' : '')}>{item.title}</p>
+								<a href={item.href} className="">
+									<img src={item.img} alt="" className="" />
+								</a>
+									<a href={item.href} className={cn("text-[20px]", item.isLight ? 'text-[#071627]' : '')}>{item.title}</a>
 							</SwiperSlide>
 						))}
 

@@ -4,7 +4,6 @@ import img3 from '@assets/2.5.Highlights/icon3.png'
 
 
 
-
 const highlight_items  = [
 	{
 		id: 0,

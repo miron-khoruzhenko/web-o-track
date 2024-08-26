@@ -15,6 +15,7 @@ const sliderItems = [
 		color: '#f4f1ec',
 		img: img1,
 		isLight: true,
+		href: 'https://x.com/staderlabs',
 	},
 	{
 		id: 1,
@@ -22,6 +23,7 @@ const sliderItems = [
 		color: '#071627',
 		img: img2,
 		isLight: false,
+		href: 'https://x.com/RyzeFi',
 	},
 	{
 		id: 2,
@@ -29,6 +31,7 @@ const sliderItems = [
 		color: '#e16a86',
 		img: img3,
 		isLight: false,
+		href: 'https://x.com/cega_fi',
 	},
 	{
 		id: 3,
@@ -36,6 +39,7 @@ const sliderItems = [
 		color: '#141011',
 		img: img4,
 		isLight: false,
+		href: 'https://x.com/TryRingAI',
 	},
 	{
 		id: 4,
@@ -43,6 +47,7 @@ const sliderItems = [
 		color: '#101115',
 		img: img5,
 		isLight: false,
+		href: 'https://x.com/0xSoulProtocol',
 	},
 	{
 		id: 5,
@@ -50,6 +55,7 @@ const sliderItems = [
 		color: '#69FFDB',
 		img: img6,
 		isLight: true,
+		href: 'https://x.com/KTX_finance',
 	},
 	{
 		id: 6,
@@ -57,6 +63,7 @@ const sliderItems = [
 		color: '#FFFFFF',
 		img: img7,
 		isLight: true,
+		href: 'https://x.com/FinanceFlorence',
 	},
 	{
 		id: 7,
@@ -64,6 +71,7 @@ const sliderItems = [
 		color: '#0D161B',
 		img: img8,
 		isLight: false,
+		href: 'https://x.com/OpalDeFi',
 	},
 ]
 

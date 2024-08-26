@@ -1,4 +1,8 @@
+
 import portfolio_items from './portfolio_items'
+
+
+
 
 const Portfolio = () => {
 	return (
@@ -8,19 +12,14 @@ const Portfolio = () => {
 
 			<div className="flex gap-y-4 flex-wrap border-x border-[#C2C2C2]">
 				{portfolio_items.map((item, index) => {
-					if (4 < index && index < 8) {
-						return (
-							<div className="w-[25%] flex flex-col items-center justify-center ">
-								<img src={item.img} alt="" className="w-[100px]" />
-								<h4 className="text-center font-[Inter] text-[10px] md:text-[15px]">{item.name}</h4>
+					return (
+						<a href={item.href} className={`${4 < index && index < 8 ? 'w-[25%]' : 'w-[20%]' } cursor-pointer flex flex-col items-center justify-center `}>
+							<div className="size-[100px] flex items-center justify-center">
+								<item.img className='fill-black hover:fill-[#1CF1D5] transition-colors drop-shadow-2xl shadow-[#1CF1D5]'/>
 							</div>
-						)
-					}
-					return(
-						<div className="w-[20%] flex flex-col items-center justify-center ">
-							<img src={item.img} alt="" className="w-[100px]" />
+
 							<h4 className="text-center font-[Inter] text-[10px] md:text-[15px]">{item.name}</h4>
-						</div>
+						</a>
 					)
 				})}
 			</div>
