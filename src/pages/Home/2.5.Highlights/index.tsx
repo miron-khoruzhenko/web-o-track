@@ -3,7 +3,7 @@ import highlight_items from './highlights_items'
 
 const Highlights = () => {
 	return (
-		<div className='bg-dark pt-[71px] relative overflow-visible z-20 pb-[123px]'>
+		<div id='highlights' className='bg-dark pt-[71px] relative overflow-visible z-20 pb-[123px]'>
 			<h2 className="font-ascii font-medium relative text-center text-[24px] md:text-[45px] p1-px">
 				<span className="absolute  -top-[3px] left-[calc(50%-3px)] -translate-x-1/2 block text-dark"
 					style={{textShadow: "0.5px 0 #fff, -0.5px 0 #fff, 0 0.5px #fff, 0 -0.5px #fff, 0.5px 0.5px #fff, -0.5px -0.5px #fff, 0.5px -0.5px #fff, -0.5px 0.5px #fff"}}

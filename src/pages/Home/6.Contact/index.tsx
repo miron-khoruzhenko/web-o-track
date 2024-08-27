@@ -64,9 +64,9 @@ const Contact = () => {
 							Fuelling top-tier projects <br /> with advisory and marketing
 						</p>
 
-						<button className='bg-white text-[#081728] whitespace-nowrap px-2 md:px-9 py-2 md:py-4 block text-[12px] md:text-[15px]'>
+						<a href='https://t.me/finishtg' className='bg-white text-[#081728] whitespace-nowrap px-2 md:px-9 py-2 md:py-4 block text-[12px] md:text-[15px]'>
 							Get in touch
-						</button>
+						</a>
 					</div>
 				</div>
 
@@ -82,10 +82,10 @@ const Contact = () => {
 				</div>
 
 				<ul className="hidden md:flex items-center justify-between text-[15px] gap-8">
-					<li className="">SOCIAL</li>
-					<li className="">PACKAGES</li>
-					<li className="">Clients</li>
-					<li className="">Services</li>
+					<li className=""><a href="#highlights" className="">SOCIAL</a></li>
+					<li className=""><a href="#package" className="">PACKAGES</a></li>
+					<li className=""><a href="#clients" className="">Clients</a></li>
+					<li className=""><a href="#services" className="">Services</a></li>
 				</ul>
 
 				<img src={logo_text} alt="" className="h-[34px] md:h-auto mx-4 block md:hidden" />
