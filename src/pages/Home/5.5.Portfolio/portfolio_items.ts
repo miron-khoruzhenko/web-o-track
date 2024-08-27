@@ -104,13 +104,13 @@ const portfolio_items = [
 		id: 6,
 		img: Img7,
 		name: 'Azuro',
-		href: ''
+		href: 'https://x.com/azuroprotocol'
 	},
 	{
 		id: 7,
 		img: Img8,
 		name: 'KelpDAO',
-		href: 'https://x.com/azuroprotocol'
+		href: 'https://x.com/KelpDAO'
 	},
 	{
 		id: 8,
