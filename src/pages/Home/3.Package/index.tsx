@@ -172,13 +172,14 @@ const PackageCardDark = (
 
 				<strong className="mt-[10px] text-[25px] block">${price}</strong>
 
-				<div
-					className="text-[13px] p-1 w-[166px] mx-auto bg-[#080127] transition-colors group-hover:bg-[#F43A66] text-white"
+				<a
+					href='https://t.me/finishtg'
+					className="text-[13px] block p-1 w-[166px] mx-auto bg-[#080127] transition-colors group-hover:bg-[#F43A66] text-white"
 					style={{
 						// backgroundColor: color === 'default' ? "#081627" : color,
 						// color: color === 'default' ? "#fff" : 'white'
 					}}
-				>Get</div>
+				>Get</a>
 				<p
 					className="text-xs font-[Inter] font-medium text-[#46D2B0] transition-colors group-hover:text-[#F43A66]"
 				// style={{ color: color === 'default' ? "#46D2B0" : color }}

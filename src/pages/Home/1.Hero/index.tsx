@@ -52,27 +52,31 @@ const Hero = () => {
 					<div className={cn("md:hidden transition-transform z-50 text-white fixed top-0 left-0 right-0 bottom-0 bg-black/70 flex justify-center items-center",  isNavOpen ? 'translate-x-0' : 'translate-x-[100vw]')}>
 
 						<ul className={cn('transition-transform flex flex-col gap-4 justify-center items-center', isNavOpen ? 'translate-x-0' : 'translate-x-[100vw]')}>
-							<li className="cursor-pointer">our mission</li>
-							<li className="cursor-pointer">services</li>
-							<li className="cursor-pointer">clients</li>
-							<li className="cursor-pointer">contact us</li>
+							<li onClick={()=>setIsNavOpen(false)} className="cursor-pointer">
+								<a href="#mission" className="">our mission</a></li>
+							<li onClick={()=>setIsNavOpen(false)} className="cursor-pointer">
+								<a href="#services" className="">services</a></li>
+							<li onClick={()=>setIsNavOpen(false)} className="cursor-pointer">
+								<a href="#clients" className="">clients</a></li>
+							<li onClick={()=>setIsNavOpen(false)} className="cursor-pointer">
+								<a href="#contactUs" className="">contact us</a></li>
 						</ul>
 					</div>
 
 				</div>
 
 				<div className="full hidden md:grid grid-cols-4 mt-[4%] text-[17px] text-center mb-[72px]">
-					<a href="#mission" className="relative py-6 px-3 w-full border-y border-[#183351] after:h-[calc(100%-10px)] after:w-px after:bg-[#183351] after:absolute after:top-[5px] after:left-full">
+					<a href="#mission" className="relative cursor-pointer py-6 px-3 w-full border-y border-[#183351] after:h-[calc(100%-10px)] after:w-px after:bg-[#183351] after:absolute after:top-[5px] after:left-full">
 						our mission
 					</a>
-					<a id="#services" className="relative py-6 px-3 w-full border-y border-[#183351] after:h-[calc(100%-10px)] after:w-px after:bg-[#183351] after:absolute after:top-[5px] after:left-full">
+					<a href="#services" className="relative cursor-pointer py-6 px-3 w-full border-y border-[#183351] after:h-[calc(100%-10px)] after:w-px after:bg-[#183351] after:absolute after:top-[5px] after:left-full">
 						services
 					</a>
-					<a id="#clients" className="relative py-6 px-3 w-full border-y border-[#183351] after:h-[calc(100%-10px)] after:w-px after:bg-[#183351] after:absolute after:top-[5px] after:left-full">
+					<a href="#clients" className="relative cursor-pointer py-6 px-3 w-full border-y border-[#183351] after:h-[calc(100%-10px)] after:w-px after:bg-[#183351] after:absolute after:top-[5px] after:left-full">
 						clients
 					</a>
 
-					<a id="#contactUs" className="relative py-6 px-3 w-full border-y border-[#183351] ">
+					<a href="#contactUs" className="relative cursor-pointer py-6 px-3 w-full border-y border-[#183351] ">
 						contact us
 					</a>
 				</div>
@@ -87,9 +91,9 @@ const Hero = () => {
 						<p className="font-[Inter] text-[12px] text-center md:text-[15px] mb-6 md:mb-[63px]">At 0xTrack, we specialize in delivering top-tier marketing  solutions for the most promising WEB3 projects.</p>
 					</div>
 
-					<button className=" text-center mx-auto flex items-center justify-center gap-1 border-[2px] border-black bg-white p-2 md:p-4">
+					<a href='https://t.me/finishtg' className="text-center mx-auto w-fit flex items-center justify-center gap-1 border-[2px] border-black bg-white p-2 md:p-4">
 						<span className="text-[10px] md:text-[15px] tracking-tighter whitespace-nowrap">Contact us today !</span> <img src={arrow_icon} alt="" className="invert w-[22px] ml-2" />
-					</button>
+					</a>
 				</div>
 			</div>
 
