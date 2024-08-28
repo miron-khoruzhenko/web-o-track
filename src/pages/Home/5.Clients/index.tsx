@@ -90,7 +90,7 @@ const Clients = () => {
 								activeIndex === index ? 'opacity-100' : 'opacity-60')}
 								style={{ backgroundColor: item.color }}
 							>
-								<a href={item.href} className="">
+								<a href={item.href} target='_blank' className="">
 									<img src={item.img} alt="" className="" />
 								</a>
 									<a href={item.href} className={cn("text-[20px]", item.isLight ? 'text-[#071627]' : '')}>{item.title}</a>

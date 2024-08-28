@@ -91,7 +91,7 @@ const Hero = () => {
 						<p className="font-[Inter] text-[12px] text-center md:text-[15px] mb-6 md:mb-[63px]">At 0xTrack, we specialize in delivering top-tier marketing  solutions for the most promising WEB3 projects.</p>
 					</div>
 
-					<a href='https://t.me/finishtg' className="text-center mx-auto w-fit flex items-center justify-center gap-1 border-[2px] border-black bg-white p-2 md:p-4">
+					<a href='https://t.me/finishtg' target='_blank' className="text-center mx-auto w-fit flex items-center justify-center gap-1 border-[2px] border-black bg-white p-2 md:p-4">
 						<span className="text-[10px] md:text-[15px] tracking-tighter whitespace-nowrap">Contact us today !</span> <img src={arrow_icon} alt="" className="invert w-[22px] ml-2" />
 					</a>
 				</div>

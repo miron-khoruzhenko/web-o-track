@@ -30,30 +30,30 @@ const Contact = () => {
 				</p>
 
 				<div className="grid grid-cols-3 gap-5 font-medium font-[Inter] text-[12px] mt-[10px] px-2">
-					<div className="bg-[#fff] text-black p-1 pt-4">
+					<a href='mailto:0xtrack@proton.me' className="bg-[#fff] text-black p-1 pt-4">
 						<div className="flex items-center justify-start gap-1 mb-2 ml-2">
 							<img src={social_icon_1} alt="" className="" />
 							<h3 className="">Mail</h3>
 						</div>
 						<img src={img1} alt="" className="" />
 
-					</div>
-					<div className="bg-[#fff] text-[#1CF1D5] p-1 pt-4">
+					</a>
+					<a href='https://x.com/0xTrack' target='_blank' className="bg-[#fff] text-[#1CF1D5] p-1 pt-4">
 						<div className="flex items-center justify-start gap-1 mb-2 ml-2">
 							<img src={social_icon_2} alt="" className="" />
 							<h3 className="">Twitter</h3>
 						</div>
 						<img src={img2} alt="" className="" />
 
-					</div>
-					<div className="bg-[#fff] text-[#FD5D90] p-1 pt-4">
+					</a>
+					<a href='https://t.me/finishtg' target='_blank' className="bg-[#fff] text-[#FD5D90] p-1 pt-4">
 						<div className="flex items-center justify-start gap-1 mb-2 ml-2">
 							<img src={social_icon_3} alt="" className="" />
 							<h3 className="">Telegram</h3>
 						</div>
 						<img src={img3} alt="" className="" />
 
-					</div>
+					</a>
 				</div>
 			</div>
 
@@ -64,7 +64,7 @@ const Contact = () => {
 							Fuelling top-tier projects <br /> with advisory and marketing
 						</p>
 
-						<a href='https://t.me/finishtg' className='bg-white text-[#081728] whitespace-nowrap px-2 md:px-9 py-2 md:py-4 block text-[12px] md:text-[15px]'>
+						<a href='https://t.me/finishtg' target='_blank' className='bg-white text-[#081728] whitespace-nowrap px-2 md:px-9 py-2 md:py-4 block text-[12px] md:text-[15px]'>
 							Get in touch
 						</a>
 					</div>

@@ -18,7 +18,7 @@ const Portfolio = () => {
 			<div className="flex gap-y-4 flex-wrap border-x border-[#C2C2C2]">
 				{portfolio_items.map((item, index) => {
 					return (
-						<a href={item.href} className={`${4 < index && index < 8 ? 'w-[25%]' : 'w-[20%]' } cursor-pointer flex flex-col items-center justify-center `}>
+						<a href={item.href} target='_blank' className={`${4 < index && index < 8 ? 'w-[25%]' : 'w-[20%]' } cursor-pointer flex flex-col items-center justify-center `}>
 							<div className="size-[100px] flex items-center justify-center">
 								<item.img onMouseEnter={handleMouseEnter} className={cn('fill-black transition-colors drop-shadow-2xl ', randomInt === 1 ? 'shadow-[#1CF1D5] hover:fill-[#1CF1D5] ' : 'shadow-[#F43A66] hover:fill-[#F43A66] '  )}/>
 							</div>

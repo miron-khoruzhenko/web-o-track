@@ -174,6 +174,7 @@ const PackageCardDark = (
 
 				<a
 					href='https://t.me/finishtg'
+					target='_blank'
 					className="text-[13px] block p-1 w-[166px] mx-auto bg-[#080127] transition-colors group-hover:bg-[#F43A66] text-white"
 					style={{
 						// backgroundColor: color === 'default' ? "#081627" : color,
