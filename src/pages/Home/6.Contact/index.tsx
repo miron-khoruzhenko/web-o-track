@@ -82,10 +82,10 @@ const Contact = () => {
 				</div>
 
 				<ul className="hidden md:flex items-center justify-between text-[15px] gap-8">
-					<li className=""><a href="#highlights" className="">SOCIAL</a></li>
-					<li className=""><a href="#package" className="">PACKAGES</a></li>
-					<li className=""><a href="#clients" className="">Clients</a></li>
-					<li className=""><a href="#services" className="">Services</a></li>
+					<li className="uppercase"><a href="#highlights" className="">SOCIAL</a></li>
+					<li className="uppercase"><a href="#package" className="">PACKAGES</a></li>
+					<li className="uppercase"><a href="#clients" className="">Clients</a></li>
+					<li className="uppercase"><a href="#services" className="">Services</a></li>
 				</ul>
 
 				<img src={logo_text} alt="" className="h-[34px] md:h-auto mx-4 block md:hidden" />
