@@ -64,7 +64,7 @@ const Contact = () => {
 							Fuelling top-tier projects <br /> with advisory and marketing
 						</p>
 
-						<a href='https://t.me/finishtg' target='_blank' className='bg-white text-[#081728] whitespace-nowrap px-2 md:px-9 py-2 md:py-4 block text-[12px] md:text-[15px]'>
+						<a href='https://forms.gle/VJcJj8sExE3jBpbk9' target='_blank' className='bg-white text-[#081728] whitespace-nowrap px-2 md:px-9 py-2 md:py-4 block text-[12px] md:text-[15px]'>
 							Get in touch
 						</a>
 					</div>

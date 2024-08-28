@@ -173,7 +173,7 @@ const PackageCardDark = (
 				<strong className="mt-[10px] text-[25px] block">${price}</strong>
 
 				<a
-					href='https://t.me/finishtg'
+					href='https://forms.gle/VJcJj8sExE3jBpbk9'
 					target='_blank'
 					className="text-[13px] block p-1 w-[166px] mx-auto bg-[#080127] transition-colors group-hover:bg-[#F43A66] text-white"
 					style={{
