@@ -148,7 +148,7 @@ const PackageCardDark = (
 
 			<div className="">
 				<div className="flex items-center justify-between gap-6">
-					<p className="font-medium font-[Inter] whitespace-nowrap text-[12px] md:text-[15px]  ">Followers Cowered</p>
+					<p className="font-medium font-[Inter] whitespace-nowrap text-[12px] md:text-[15px]  ">Followers Covered</p>
 					<div
 						className="min-w-[70px] text-center text-[12px] md:text-[15px] bg-[#46D2B0] transition-colors group-hover:bg-[#F43A66] text-[#081627]  group-hover:text-[#fff]"
 						style={{
